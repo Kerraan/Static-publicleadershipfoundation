@@ -45,26 +45,9 @@ layout: 'base.njk'
         <a class="text-white txt-dec-none fs-200 sign-up-btn btn-black uppercase" href="#">our workshops</a>
       </div>
     </section>
-    <section class="grid-container grid-container--cards-a">
-      <div class="g-card bg-pink c-story">
-        <div class="card-content flex">
-          <h3>
-            <a class="link-white fs-500 text-white txt-dec-none" href="#">Eva's Story</a>
-          </h3>
-          <p class="fs-300 txt-align-left text-white">
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
-            looked up one of the more obscure Latin words.
-          </p>
-          <a class="link-white flex-end text-white fs-500" href="#">More...</a>
-        </div>
-      </div>
-      <picture class="c-story-picture">
-        <source srcset="/assets/images/story/Eva-Kleingeld2.webp" type="image/webp"/>
-        <source srcset="/assets/images/story/Eva-Kleingeld2.jpg" type="image/jpeg"/>
-        <img src="assets/images/story/Eva-Kleingeld2.jpg" alt="story picture"/>
-      </picture>
-    </section>
+    {%- for story in collections.featured -%}
+      {% include 'featured-story-snippet.njk' %}
+    {%- endfor -%}
   </div>
   <section class="events-section margin-top-3">
     <ul class="events-list-container">

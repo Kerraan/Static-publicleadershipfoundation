@@ -6,9 +6,14 @@
   width: 100%;
 }
 
+.c-story {
+  height: 100%;
+}
+
 .card-content {
   flex-direction: column;
   align-items: flex-start;
+
   --gap: 1.2rem;
 }
 

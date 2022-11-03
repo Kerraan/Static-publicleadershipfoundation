@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+
+<main class="grid-container grid-container--story margin-top-6 margin-bot-6">
+  <article class="story-article">
+    <div class="article-meta">
+      <h1 class="fs-600">{{ title }}</h1>
+      <p class="date uppercase">{{ date | eventDate}}</p>
+      <p>
+        <span>
+          <strong>{{tags}}</strong>
+        </span>
+      </p>
+    </div>
+    <p class="article-content margin-top-3 margin-bot-3">
+      {{ content | safe }}
+    </p>
+  </article>
+</main>
