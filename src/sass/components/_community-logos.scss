@@ -1,0 +1,22 @@
+@use "../base";
+
+.wrapper {
+  width: 100%;
+}
+
+// .wrapper .carousel {
+//   max-width: 1200px;
+// }
+
+.carousel {
+  min-width: 100%;
+}
+
+.carousel img {
+  filter: brightness(0);
+  opacity: 70%;
+}
+
+.owl-dots {
+  display: none;
+}

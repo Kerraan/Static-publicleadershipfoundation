@@ -1,0 +1,63 @@
+@use "../base";
+@use "../layout";
+
+/* 16:9 */
+.hero-section--home {
+  flex-direction: column;
+  padding-block-start: 3rem;
+  padding-block-end: 6rem;
+  padding-inline: 1.5rem;
+  --gap: 2rem;
+  background-color: var(--clr-black);
+}
+
+.hero-section--home h1 {
+  font-weight: 800;
+}
+
+.hero-container--home {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  max-width: 50rem;
+}
+
+.grid-container--home {
+  margin-block-end: 3rem;
+}
+
+.grid-container--cards-h {
+  // padding-inline: 2rem;
+  margin-block-start: 3rem;
+  min-width: 100%;
+}
+
+/* ******************** */
+/* MEDIA QUERIES */
+/* ******************** */
+
+@media (min-width: 45em) {
+  .grid-container--home {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: layout.$standardgrid;
+    grid-template-areas:
+      ". intro intro ."
+      ". cards-h cards-h ."
+      ". featured featured ."
+      ". btn-more-projects btn-more-projects .";
+  }
+
+  .grid-container--cards-h {
+    grid-area: cards-h;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "event video"
+      "academy-picture academy"
+      "join join";
+  }
+
+  .ftd-projects-title {
+    grid-area: ftd-projects-title;
+  }
+}

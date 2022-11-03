@@ -1,0 +1,25 @@
+@use "../base";
+@use "../layout";
+
+.grid-container--event {
+  margin-block-end: 3rem;
+}
+
+.more-events {
+  grid-column: 1/2;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 45em) {
+  .grid-container--event-intro {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: layout.$standardgrid;
+    grid-template-areas: ". intro intro .";
+  }
+
+  .more-events {
+    grid-column: 2/4;
+  }
+}

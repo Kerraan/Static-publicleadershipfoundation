@@ -1,0 +1,48 @@
+@use "../base";
+@use "../layout";
+
+.event-info {
+  flex-direction: column;
+  --gap: 0.2rem;
+}
+
+.event {
+  grid-template-columns: 1fr 2fr;
+  column-gap: var(--container-gap, 2rem);
+  grid-area: event;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  border-bottom: 1px solid var(--clr-black);
+  text-decoration: none;
+}
+
+.events-list-container {
+  list-style: none;
+}
+
+.event-picture {
+  align-self: start;
+}
+
+.events-section {
+  display: grid;
+
+  // margin-block-start: 3rem;
+  padding-block-start: 2rem;
+  padding-block-end: 6rem;
+}
+
+.event:active h3,
+.event:hover h3 {
+  text-decoration: underline 3px solid var(--clr-pink);
+}
+
+@media (min-width: 45em) {
+  .events-section {
+    grid-template-columns: layout.$standardgrid;
+  }
+
+  .events-list-container {
+    grid-column: 2/4;
+  }
+}

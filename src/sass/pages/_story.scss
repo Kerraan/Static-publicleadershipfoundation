@@ -1,0 +1,14 @@
+@use "../base";
+@use "../layout";
+
+@media (min-width: 45em) {
+  .grid-container--story {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: layout.$standardgrid;
+  }
+
+  .story-article {
+    text-align: left;
+    grid-column: 2/4;
+  }
+}

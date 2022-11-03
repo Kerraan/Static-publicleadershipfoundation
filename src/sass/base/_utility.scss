@@ -1,0 +1,142 @@
+@use "root";
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1.5rem);
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.flex-center {
+  align-self: center;
+}
+
+.flex-start {
+  align-self: flex-start;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.margin-top-3 {
+  margin-top: 3rem;
+}
+
+.margin-top-6 {
+  margin-top: 6rem;
+}
+
+.margin-bot-6 {
+  margin-bottom: 6rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+/* Typography  */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.txt-align-left {
+  text-align: left;
+}
+
+.txt-dec-none {
+  text-decoration: none;
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-450 {
+  font-size: var(--fs-450);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+
+.fs-900 {
+  font-size: var(--fs-900);
+}
+
+/* color */
+.bg-black {
+  background-color: var(--clr-black);
+}
+
+.bg-blue {
+  background-color: var(--clr-blue);
+}
+
+.bg-pink {
+  background-color: var(--clr-pink);
+}
+
+.text-black {
+  color: var(--clr-black);
+}
+
+.text-blue {
+  color: var(--clr-blue);
+}
+
+.text-pink {
+  color: var(--clr-pink);
+}
+
+.text-gradient {
+  color: var(--clr-gradient);
+}
+
+.text-white {
+  color: var(--clr-white);
+}

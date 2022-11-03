@@ -1,0 +1,72 @@
+@use "../base";
+@use "../layout";
+
+/* 16:9 */
+.intro-a {
+  flex-direction: column;
+  align-items: center;
+  max-width: 50rem;
+  background-color: var(--clr-white);
+  --gap: 0;
+}
+
+.intro-txt {
+  flex-direction: column;
+  padding-block-start: 3rem;
+  padding-block-end: 2rem;
+  padding-inline: 1rem;
+  --gap: 0.6rem;
+
+  h2 {
+    font-weight: 800;
+  }
+
+  h1 {
+    font-weight: 800;
+  }
+}
+
+.grid-container--academy {
+  margin-block-end: 3rem;
+}
+
+.grid-container--cards-a {
+  // padding-inline: 2rem;
+  margin-block-start: 3rem;
+  min-width: 100%;
+}
+
+.grid-container--ftd-projects {
+  row-gap: 2rem;
+}
+
+/* ******************** */
+/* MEDIA QUERIES */
+/* ******************** */
+
+@media (min-width: 45em) {
+  .grid-container--academy {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: layout.$standardgrid;
+    grid-template-areas: ". intro intro ." ". cards-a cards-a .";
+  }
+
+  .grid-container--cards-a {
+    grid-area: cards-a;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "story story-picture";
+  }
+
+  .story-picture {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-area: academy-picture;
+
+    img {
+      object-fit: cover;
+      height: auto;
+      width: 100%;
+    }
+  }
+}

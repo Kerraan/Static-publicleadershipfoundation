@@ -1,4 +1,6 @@
-body {
-  font-family: sans-serif;
-  background-color: #f9f9f9;
-}
+@use "abstracts";
+@use "base";
+@use "components";
+@use "layout";
+@use "pages";
+@use "theme";

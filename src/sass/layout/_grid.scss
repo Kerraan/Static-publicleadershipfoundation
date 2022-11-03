@@ -1,0 +1,19 @@
+@use "../base";
+
+// Standard grid variable
+$standardgrid: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(2rem, 1fr);
+
+.grid-container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  // grid-template-columns: 100%;
+}
+
+.grid-container--about {
+  display: grid;
+}
+
+/* ******************** */
+/* MEDIA QUERIES */
+/* ******************** */

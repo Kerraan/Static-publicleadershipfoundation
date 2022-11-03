@@ -1,0 +1,54 @@
+@use "../base";
+@use "../layout";
+
+.event-overview {
+  padding-inline: 1.5rem;
+}
+
+.event-details {
+  flex-direction: column;
+  --gap: 0.2rem;
+}
+
+.underline {
+  text-decoration: underline 3px var(--clr-pink);
+}
+.left {
+  flex-direction: column;
+}
+
+.book {
+  margin-block: 1rem;
+}
+
+.left div {
+  --gap: 5rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.tab {
+  position: absolute;
+  left: 10rem;
+}
+
+.line-h-up {
+  line-height: 2;
+}
+
+/* ******************** */
+/* MEDIA QUERIES */
+/* ******************** */
+
+@media (min-width: 45em) {
+  .event-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--container-gap, 2rem);
+  }
+  .event-details {
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,37 @@
+@use "../base";
+@use "../layout";
+
+.txt-format {
+  padding-inline: 1.5rem;
+  padding-block: 3rem;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 45em) {
+  .about-content {
+    grid-area: about-content;
+  }
+
+  .phi-content {
+    grid-area: phi-content;
+  }
+
+  .txt-format {
+    padding-inline: 3rem;
+  }
+
+  .grid-container--about {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: layout.$standardgrid;
+    grid-template-areas:
+      ". about-content about-content ."
+      ". phi-content phi-content .";
+  }
+}

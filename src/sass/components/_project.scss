@@ -1,0 +1,71 @@
+@use "../base";
+@use "../layout";
+
+.featured-projects {
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  row-gap: 3rem;
+}
+
+.featured-list-container {
+  list-style: none;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+}
+
+.project-picture {
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+}
+.project-title {
+  font-weight: 700;
+}
+
+.project {
+  flex-direction: column;
+  // text-align: left;
+  --gap: 1.2rem;
+  // border: solid blue 1px;
+  padding-block-end: 2rem;
+  box-shadow: 3px 3px 15px -4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-black);
+}
+
+.project:active .project-title,
+.project:hover .project-title {
+  text-decoration: underline 3px solid var(--clr-pink);
+}
+
+.project-txt {
+  padding-inline: 1.5rem;
+  --gap: 0.8rem;
+}
+
+/* ******************** */
+/* MEDIA QUERIES */
+/* ******************** */
+@media (min-width: 45em) {
+  .featured-projects {
+    grid-area: featured;
+    column-gap: 1rem;
+  }
+
+  .ftd-projects-title {
+    grid-area: ftd-projects-title;
+  }
+
+  // New
+  .grid-container--ftd-projects1 {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: layout.$standardgrid;
+    grid-template-areas: ". ftd-projects-title ftd-projects-title ." ". featured featured ." ". btn-more-projects btn-more-projects .";
+  }
+
+  .featured-list-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: featured;
+    grid-column: 2/4;
+  }
+}
