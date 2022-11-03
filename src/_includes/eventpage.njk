@@ -1,0 +1,39 @@
+---
+layout: 'base.njk'
+---
+
+<main>
+  <section class="grid-container events-section bg-blue margin-top-6 margin-bot-6">
+    <div class="events-list-container">
+      <div class="event-overview">
+        <div class="left flex relative txt-align-left">
+          <picture class="event-picture">
+            <source srcset="{{image}}" type="image/webp"/>
+            <source srcset="{{image}}" type="image/jpeg"/>
+            <img src="{{image}}" alt="{{imageAlt}}"/>
+          </picture>
+          <div class="line-h-up">
+            <p>
+              <strong>Location:
+              </strong>
+              <span class="tab">Amsterdam</span>
+            </p>
+            <p>
+              <strong>Arrival:
+              </strong>
+              <span class="tab">20:00</span>
+            </p>
+          </div>
+        </div>
+        <div class="event-details txt-align-left flex">
+          <p class="date uppercase">{{ event.data.date | eventDate }}</p>
+          <h3 class="fs-400 underline">{{ title }}</h3>
+          <div class="btn-layer book">
+            <a class="text-white txt-dec-none fs-200 sign-up-btn btn-pink uppercase" href="#">book your spot</a>
+          </div>
+          <p class="event-sub-txt fs-300">{{ content | safe}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
