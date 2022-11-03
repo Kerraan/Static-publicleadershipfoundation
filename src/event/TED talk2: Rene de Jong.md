@@ -1,7 +1,7 @@
 ---
-title: "TED Talk5: Rene de Jong"
+title: "TED Talk 2: Rene de Jong"
 date: 2022-20-10
-tags: event
+tags: workshop
 image: /assets/images/project/academy.webp
 imageAlt: Academy pictue
 description: Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature

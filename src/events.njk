@@ -49,22 +49,7 @@ layout: 'base.njk'
   <section class="events-section margin-top-3 bg-blue">
     <ul class="events-list-container">
       {%- for event in collections.event -%}
-        <li>
-          <a href="{{ event.url }}" class="event text-black grid-container">
-            <picture class="event-picture">
-              <source srcset="{{ event.data.image }}" type="image/webp"/>
-              <source srcset="{{ event.data.image }}" type="image/jpeg"/>
-              <img src=" {{ event.data.image }}" alt="{{ event.data.imageAlt }}"/>
-            </picture>
-            <div class="event-info txt-align-left flex">
-              <p class="date uppercase">{{ event.data.date | eventDate }}</p>
-              <h3 class="fs-400">{{ event.data.title }}</h3>
-              <p class="event-sub-txt fs-300">
-                {{ event.data.description }}
-              </p>
-            </div>
-          </a>
-        </li>
+        {% include 'event-snippet.njk' %}
       {%- endfor -%}
     </ul>
     <div class="btn-layer more-events">
@@ -72,85 +57,3 @@ layout: 'base.njk'
     </div>
   </section>
 </main>
-{# <ul class="events-list-container">
-                                  <li>
-                                    <a href="/eventpage/" class="event text-black grid-container">
-                                      <picture class="event-picture">
-                                        <source srcset="/assets/images/project/academy.webp" type="image/webp"/>
-                                        <source srcset="/assets/images/project/academy.jpg" type="image/jpeg"/>
-                                        <img src="assets/images/project/academy.jpg" alt="academy picture"/>
-                                      </picture>
-                                      <div class="event-info txt-align-left flex">
-                                        <p class="date uppercase">WO 19 OKT 2022</p>
-                                        <h3 class="fs-400">TED Talk: Rene de Jong</h3>
-                                        <p class="event-sub-txt fs-300">
-                                          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                        </p>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="/eventpage/" class="event text-black grid-container">
-                                      <picture class="event-picture">
-                                        <source srcset="/assets/images/project/academy.webp" type="image/webp"/>
-                                        <source srcset="/assets/images/project/academy.jpg" type="image/jpeg"/>
-                                        <img src="assets/images/project/academy.jpg" alt="academy picture"/>
-                                      </picture>
-                                      <div class="event-info txt-align-left flex">
-                                        <p class="date uppercase">WO 19 OKT 2022</p>
-                                        <h3 class="fs-400">TED Talk: Rene de Jong</h3>
-                                        <p class="event-sub-txt fs-300">
-                                          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                        </p>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="/eventpage/" class="event text-black grid-container">
-                                      <picture class="event-picture">
-                                        <source srcset="/assets/images/project/academy.webp" type="image/webp"/>
-                                        <source srcset="/assets/images/project/academy.jpg" type="image/jpeg"/>
-                                        <img src="assets/images/project/academy.jpg" alt="academy picture"/>
-                                      </picture>
-                                      <div class="event-info txt-align-left flex">
-                                        <p class="date uppercase">WO 19 OKT 2022</p>
-                                        <h3 class="fs-400">TED Talk: Rene de Jong</h3>
-                                        <p class="event-sub-txt fs-300">
-                                          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                        </p>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="/eventpage/" class="event text-black grid-container">
-                                      <picture class="event-picture">
-                                        <source srcset="/assets/images/project/academy.webp" type="image/webp"/>
-                                        <source srcset="/assets/images/project/academy.jpg" type="image/jpeg"/>
-                                        <img src="assets/images/project/academy.jpg" alt="academy picture"/>
-                                      </picture>
-                                      <div class="event-info txt-align-left flex">
-                                        <p class="date uppercase">WO 19 OKT 2022</p>
-                                        <h3 class="fs-400">TED Talk: Rene de Jong</h3>
-                                        <p class="event-sub-txt fs-300">
-                                          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                        </p>
-                                      </div>
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="/eventpage/" class="event text-black grid-container">
-                                      <picture class="event-picture">
-                                        <source srcset="/assets/images/project/academy.webp" type="image/webp"/>
-                                        <source srcset="/assets/images/project/academy.jpg" type="image/jpeg"/>
-                                        <img src="assets/images/project/academy.jpg" alt="academy picture"/>
-                                      </picture>
-                                      <div class="event-info txt-align-left flex">
-                                        <p class="date uppercase">WO 19 OKT 2022</p>
-                                        <h3 class="fs-400">TED Talk: Rene de Jong</h3>
-                                        <p class="event-sub-txt fs-300">
-                                          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                                        </p>
-                                      </div>
-                                    </a>
-                                  </li>
-                                </ul> #}

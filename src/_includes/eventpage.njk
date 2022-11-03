@@ -16,22 +16,22 @@ layout: 'base.njk'
             <p>
               <strong>Location:
               </strong>
-              <span class="tab">Amsterdam</span>
+              <span class="tab">{{location}}</span>
             </p>
             <p>
               <strong>Arrival:
               </strong>
-              <span class="tab">20:00</span>
+              <span class="tab">{{time}}</span>
             </p>
           </div>
         </div>
         <div class="event-details txt-align-left flex">
-          <p class="date uppercase">{{ event.data.date | eventDate }}</p>
+          <p class="date uppercase">{{ date | eventDate }}</p>
           <h3 class="fs-400 underline">{{ title }}</h3>
           <div class="btn-layer book">
-            <a class="text-white txt-dec-none fs-200 sign-up-btn btn-pink uppercase" href="#">book your spot</a>
+            <a class="text-white txt-dec-none fs-200 sign-up-btn btn-pink uppercase" href="{{ book }}">book your spot</a>
           </div>
-          <p class="event-sub-txt fs-300">{{ content | safe}}</p>
+          <p class="event-sub-txt fs-300">{{ content | safe }}</p>
         </div>
       </div>
     </div>

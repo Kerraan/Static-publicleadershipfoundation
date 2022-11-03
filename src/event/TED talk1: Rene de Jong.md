@@ -1,10 +1,13 @@
 ---
-title: "TED Talk4: Rene de Jong"
-date: 2022-20-10
+title: "TED Talk 1: Rene de Jong"
+date: 2022-11-20
 tags: event
-image: /assets/images/project/academy.webp
+location: Utrecht
+time: "20:00"
+book: #
+image: /assets/images/project/academy.jpg
 imageAlt: Academy pictue
-description: Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+description: Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard

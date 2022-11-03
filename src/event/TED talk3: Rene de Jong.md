@@ -1,5 +1,5 @@
 ---
-title: "TED Talk2: Rene de Jong"
+title: "TED Talk 3: Rene de Jong"
 date: 2022-20-10
 tags: event
 image: /assets/images/project/academy.webp

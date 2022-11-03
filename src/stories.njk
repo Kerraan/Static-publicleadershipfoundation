@@ -6,49 +6,8 @@ layout: 'base.njk'
 <main class="grid-container grid-container--stories">
   <h1 class="title-stories">Our Stories</h1>
   <ul class="stories-container">
-    <li>
-      <div class="story grid-container">
-        <a href="/story/">
-          <picture class="s-picture"><source srcset="/assets/images/story/Eva-Kleingeld2.webp" type="image/webp"/>
-            <source srcset="/assets/images/story/Eva-Kleingeld2.jpg" type="image/jpeg"/>
-            <img src="assets/images/story/Eva-Kleingeld2.jpg" alt="story picture"/>
-          </picture>
-        </a>
-        <div class="s-card bg-pink s-story">
-          <div class="card-content flex">
-            <h3>
-              <a class="link-white fs-500 text-white txt-dec-none" href="#">Eva's Story</a>
-            </h3>
-            <p class="fs-300 txt-align-left text-white">
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-              from 45 BC. It has roots in a piece of classical Latin literature from 45 BC.
-            </p>
-            <a class="link-white flex-end text-white fs-500" href="#">More...</a>
-          </div>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="story grid-container">
-        <a href="story.html">
-          <picture class="s-picture"><source srcset="/assets/images/story/Eva-Kleingeld2.webp" type="image/webp"/>
-            <source srcset="/assets/images/story/Eva-Kleingeld2.jpg" type="image/jpeg"/>
-            <img src="assets/images/story/Eva-Kleingeld2.jpg" alt="story picture"/>
-          </picture>
-        </a>
-        <div class="s-card bg-pink s-story">
-          <div class="card-content flex">
-            <h3>
-              <a class="link-white fs-500 text-white txt-dec-none" href="#">Eva's Story</a>
-            </h3>
-            <p class="fs-300 txt-align-left text-white">
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-              from 45 BC. It has roots in a piece of classical Latin literature from 45 BC.
-            </p>
-            <a class="link-white flex-end text-white fs-500" href="#">More...</a>
-          </div>
-        </div>
-      </div>
-    </li>
+    {%- for story in collections.story -%}
+      {% include 'story-snippet.njk' %}
+    {%- endfor -%}
   </ul>
 </main>

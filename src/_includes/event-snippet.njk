@@ -1,0 +1,16 @@
+<li>
+  <a href="{{ event.url }}" class="event text-black grid-container">
+    <picture class="event-picture">
+      <source srcset="{{ event.data.image }}" type="image/webp"/>
+      <source srcset="{{ event.data.image }}" type="image/jpeg"/>
+      <img src=" {{ event.data.image }}" alt="{{ event.data.imageAlt }}"/>
+    </picture>
+    <div class="event-info txt-align-left flex">
+      <p class="date uppercase">{{ event.data.date | eventDate }}</p>
+      <h3 class="fs-400">{{ event.data.title }}</h3>
+      <p class="event-sub-txt fs-300">
+        {{ event.data.description }}
+      </p>
+    </div>
+  </a>
+</li>
