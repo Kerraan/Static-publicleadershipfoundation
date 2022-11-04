@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta
-    name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- jquery -->
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <!-- owl carousel -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"/> <!-- OWL Carousel -->
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- OWL Carousel -->
     <link
-    rel="stylesheet"
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
       integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+      referrerpolicy="no-referrer"
+    />
     <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/f00df6d785.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/f00df6d785.js"
+      crossorigin="anonymous"
+    ></script>
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
     <script src="{{ '/assets/scripts/general.js' | url }}" defer></script>
     <script src="{{ '/assets/scripts/navigation.js' | url }}" defer></script>
     <script src="{{ '/assets/scripts/owlcarousel.js' | url }}" defer></script>
+    <!-- Netlify CMS -->
+    <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
   <body>
     {% include 'header.njk' %}
