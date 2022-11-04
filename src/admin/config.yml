@@ -3,7 +3,7 @@ backend:
   branch: main
   publish_mode: editorial_workflow
 media_foler: "public/assets/images"
-public_folder: "assets/images"
+public_folder: "/assets/images"
 collections:
   - name: "event"
     label: "Event"
