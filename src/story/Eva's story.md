@@ -2,7 +2,6 @@
 title: Eva's Story
 author: Eva de Boer
 date: 2022-22-01
-
 image: /assets/images/story/Eva-Kleingeld2.webp
 imageAlt: image of Anna
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat.

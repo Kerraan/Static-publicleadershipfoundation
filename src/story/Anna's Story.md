@@ -5,7 +5,7 @@ date: 2021-05-01
 tags: featured
 image: /assets/images/story/Eva-Kleingeld2.webp
 imageAlt: image of Anna
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat.
+description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat.
 ---
 
 Eva Kleingeld is one of this years EPIC apprentices. During her apprenticeship Eva will regularly blog and vlog about
