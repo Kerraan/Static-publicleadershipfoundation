@@ -14,7 +14,6 @@
   background: var(--clr-blue);
   cursor: pointer;
   transition: box-shadow ease-out 0.4s;
-  box-shadow: inset 0 0 0 0 var(--clr-pink);
 }
 
 .sign-up-btn::after {
@@ -38,14 +37,23 @@
   display: none;
 }
 
-.sign-up-btn:hover {
-  box-shadow: inset 400px 0 0 0 var(--clr-pink);
-  color: white;
-}
-
 /* Black Button */
 .btn-black {
   --clr-blue: var(--clr-black);
+  box-shadow: inset 0 0 0 0 var(--clr-pink);
+
+  &:hover {
+    box-shadow: inset 400px 0 0 0 var(--clr-pink);
+    color: white;
+  }
+}
+
+.btn-blue {
+  box-shadow: inset 0 0 0 0 var(--clr-white);
+
+  &:hover {
+    box-shadow: inset 400px 0 0 0 var(--clr-white);
+  }
 }
 
 /* Pink Button */

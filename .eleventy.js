@@ -1,10 +1,10 @@
-"use strict";
+// "use strict";
 
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("/src/sass/");
-  eleventyConfig.addPassthroughCopy("/src/assets");
+  eleventyConfig.addPassthroughCopy("/src/assets/");
 
   eleventyConfig.addFilter("eventDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(

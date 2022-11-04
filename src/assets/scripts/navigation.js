@@ -21,7 +21,9 @@ navToggle.addEventListener("click", () => {
 
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
-console.log(currentYear);
 yearEl.textContent = currentYear;
 
-// Sticky navigation
+// Aria-current page
+document.querySelectorAll(".nav-link").forEach((link) => {
+  console.log(link);
+});
