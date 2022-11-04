@@ -1,9 +1,8 @@
 <li>
-  <a href="{{ story.url }}" class="story grid-container">
-    <picture class="s-picture"
-      ><source srcset="{{ story.data.image }}" type="image/webp" />
-      <source srcset="{{ story.data.image }}" type="image/jpeg" />
-      <img src="{{ story.data.image }}" alt="{{ story.data.imageAlt }}" />
+  <a href="{{story.url}}" class="story grid-container">
+    <picture class="s-picture"><source srcset="{{ story.data.image }}" type="image/webp"/>
+      <source srcset="{{ story.data.image }}" type="image/jpeg"/>
+      <img src="{{ story.data.image }}" alt="{{ story.data.imageAlt }}"/>
     </picture>
     <div class="s-card bg-pink s-story">
       <div class="card-content flex">
@@ -18,13 +17,3 @@
     </div>
   </a>
 </li>
-
-<!-- <h3>
-  <a class="link-white fs-500 text-white txt-dec-none" href="#">{{
-    story.data.title
-  }}</a>
-</h3>
-<p class="fs-300 txt-align-left text-white">
-  {{ story.data.description }}
-</p>
-<a class="link-white flex-end text-white fs-500" href="#">More...</a> -->

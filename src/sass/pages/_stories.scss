@@ -2,7 +2,6 @@
 @use "../layout";
 
 .story {
-  margin-inline: 1.5rem;
   text-decoration: none;
   min-width: 100%;
   cursor: pointer;
@@ -23,6 +22,7 @@
   display: grid;
   row-gap: 1rem;
   list-style: none;
+  margin-inline: 1.5rem;
 }
 
 .grid-container--stories {
