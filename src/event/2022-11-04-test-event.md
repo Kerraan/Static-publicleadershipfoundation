@@ -7,8 +7,4 @@ tags:
 image: /assets/images/file-7-e1570108218746.jpg
 imageAlt: borreltijd!
 ---
-W﻿at een fantastisch event is dit zeg. Echt mo
-
-![](/assets/images/file-7-e1570108218746.jpg)
-
-oi
+W﻿at een fantastisch event is dit zeg. Echt mooi
