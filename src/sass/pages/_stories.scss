@@ -7,6 +7,12 @@
   cursor: pointer;
 }
 
+.story:hover .snippet-title,
+.story:hover .snippet-more {
+  color: var(--clr-blue);
+  text-decoration: underline 3px solid var(--clr-blue);
+}
+
 .s-card {
   padding-block: 1.5rem;
   padding-inline: 1.5rem;
@@ -55,6 +61,7 @@
 
   .stories-container {
     grid-column: 2/4;
+    margin-inline: 0;
   }
 
   .s-picture {
