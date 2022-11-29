@@ -1,6 +1,11 @@
 @use "../base";
 @use "../layout";
 
+.story-article {
+  padding-inline: 1.5rem;
+  text-align: left;
+}
+
 @media (min-width: 45em) {
   .grid-container--story {
     column-gap: var(--container-gap, 2rem);
@@ -10,5 +15,6 @@
   .story-article {
     text-align: left;
     grid-column: 2/4;
+    padding-inline: 0;
   }
 }
